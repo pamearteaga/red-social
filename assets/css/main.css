@@ -117,9 +117,17 @@ textarea{
   outline: none;
 }
 
-#publicar{
-  padding: 5px 10px;
+.activo{
   background-color: #7105c6;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+}
+
+.nulo{
+  background-color: #cca6f4;
+  padding: 5px 10px;
   border-radius: 5px;
   color: white;
   outline: none;
