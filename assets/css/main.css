@@ -1,0 +1,152 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  background-image: url("../images/pattern.png") !important;
+  background-repeat: repeat !important;
+}
+
+a{
+  text-decoration: none;
+}
+
+.top{
+   margin-top: 30px;
+}
+
+.padding{
+  padding: 30px;
+}
+
+/***** navegador ******/
+
+.navbar{
+  background-color: #7105c6;
+  padding-top: 5px;
+  border-radius: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.nav li a{
+  color: white;
+}
+
+.nav li a:hover, .nav li a:focus {
+  background-color:transparent !important;
+  color:#3fea98;
+}
+
+
+.logo{
+  float: left;
+  height: auto;
+  margin-left: 20px;
+  padding: 5px 0;
+}
+
+span{
+  color: white;
+  font-size: 18px;
+}
+
+
+/***** info perfil ******/
+
+.perfil{
+  text-align: center;
+  background-color: white;
+  padding: 20px 0px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.perfil img{
+  width: 100%;
+  height: auto;
+  border: 3px solid #7105c6;
+}
+
+.perfil a{
+  color: grey;
+  font-weight: bold;
+
+}
+
+.perfil a:hover{
+  text-decoration: none;
+  color: purple;
+}
+
+.perfil li{
+  margin: 10px 0 0 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #7105c6;
+  list-style: none;
+}
+
+
+.perfil ul{
+  margin-top: 30px;
+  padding: 0px;
+}
+
+
+
+
+/***** input publicaciones ******/
+
+.input{
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+textarea{
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  border: 1px solid #7105c6;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  resize: none;
+  overflow: visible;
+  outline: none;
+}
+
+#publicar{
+  padding: 5px 10px;
+  background-color: #7105c6;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+}
+
+#comentario-nuevo{
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+
+.texto{
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+  color: grey;
+  border-radius: 10px;
+}
+
+
+/********QUERIES********/
+
+@media (min-width: 768px){
+.navbar{
+  border-radius: 0px;
+
+}
