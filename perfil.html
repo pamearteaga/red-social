@@ -19,66 +19,65 @@
 </head>
 <body>
   <nav class="navbar">
-  <div class="container">
+    <div class="container">
 
-    <div class="navbar-header">
-      <!--menu mobile -->
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span>
-      </button>
-      <!--logo-->
-      <a class="logo" href="#">
-        <img alt="jandi" src="assets/images/logo_50x50.png">
-      </a>
-    </div>
-    <!-- secciones-->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Buscar...">
-        </div>
-      </form>
-        <li><a href="perfil.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-Inicio</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-Favoritos</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-Amigos</a></li>
-        <li><a href="#" style="color:#3fea98"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
-Mi perfil</a></li>
-      </ul> <!-- secciones-->
+      <div class="navbar-header">
+        <!--menu mobile -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span>
+        </button>
+        <!--logo-->
+        <a class="logo" href="#">
+          <img alt="jandi" src="assets/images/logo_50x50.png">
+        </a>
+      </div>
+      <!-- secciones-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Buscar...">
+            </div>
+          </form>
+          <li><a href="perfil.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+  Inicio</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  Favoritos</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+  Amigos</a></li>
+          <li><a href="#" style="color:#3fea98"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+  Mi perfil</a></li>
+        </ul> <!-- secciones-->
 
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Configuración</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Editar perfil</a></li>
-            <li><a href="#">Preferencias</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#"><img class="img-circle" src="assets/images/pame.jpg" width="40" height="auto"> Cerrar sesión</a></li>
-          </ul>
-        </li>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Configuración</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Editar perfil</a></li>
+              <li><a href="#">Preferencias</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><img class="img-circle" src="assets/images/pame.jpg" width="40" height="auto"> Cerrar sesión</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-->
+  </nav>
+
+  <div class="container top bottom">
+    <div class="perfil col-lg-2 col-xs-12">
+      <img class="img-circle responsive-img" src="assets/images/pame.jpg">
+      <h3>Pame Arteaga</h3>
+      <ul>
+        <li class="col-lg-12 col-xs-4"><a id="publicaciones" href="#">Publicaciones</a></li>
+        <li class="col-lg-12 col-xs-4"><a id="trabajos" href="#">Trabajos</a></li>
+        <li class="col-lg-12 col-xs-4"><a id="tutoriales" href="#">Tutoriales</a></li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-->
-</nav>
+    </div><!-- perfil-->
 
-<div class="container top bottom">
-  <div class="perfil col-lg-2 col-xs-12">
-    <img class="img-circle responsive-img" src="assets/images/pame.jpg">
-    <h3>Pame Arteaga</h3>
-    <ul>
-      <li class="col-lg-12 col-xs-4"><a id="publicaciones" href="#">Publicaciones</a></li>
-      <li class="col-lg-12 col-xs-4"><a id="trabajos" href="#">Trabajos</a></li>
-      <li class="col-lg-12 col-xs-4"><a id="tutoriales" href="#">Tutoriales</a></li>
-    </ul>
-  </div><!-- perfil-->
-
-  <div id="publi" class="container">
+    <div id="publi" class="container">
       <div class="row">
         <div class="col-lg-10 col-xs-12">
-
           <div class="input">
             <input type="text" placeholder="Título" id="titulo" class="input-comment">
             <textarea placeholder="comentario" id="comentario" class="input-comment"></textarea>
@@ -88,7 +87,6 @@ Mi perfil</a></li>
               <option value="Tutorial">Tutorial</option>
             </select>
 
-
             <form id="form-imagenes">
               <label class="btn btn-file iconImg">
                 <input type="file" name="fichero" value="" id="fichero" class="hidden">
@@ -96,9 +94,7 @@ Mi perfil</a></li>
               </label>
             </form>
 
-
             <button id="publicar" class="nulo">Publicar</button>
-
           </div><!--input-->
 
           <div id="comentario-nuevo" class="row-m">
@@ -127,94 +123,14 @@ Mi perfil</a></li>
               <p>3</p>
               <img class="img-thumbnail img-responsive img-comentario" src="assets/images/db8b540eb814446cebdea6ee9bb4424c.jpg">
             </div>
-
-            <div class="contenido">
-              <p>4</p>
-              <img class="img-thumbnail img-responsive img-comentario" src="assets/images/darkseafoamfringe_1024x1024.jpg">
-            </div>
-
-        </div><!--comentarios nuevos-->
-
-        <div id="trab" class="hidden">
-          <div class="row-m">
-            <!--aqui van los trabajos nuevos-->
-             <div class="contenido">
-              <h3>Trabajo 1</h3>
-              <em>Trabajo</em>
-              <p>1</p>
-              <img class="img-thumbnail img-responsive img-comentario" src="assets/images/ecdb78f4f53c82706b41281920219e5a.jpg">
-              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            </div>
-
-             <div class="contenido">
-              <h3>Trabajo 1</h3>
-              <em>Trabajo</em>
-              <p>1</p>
-              <img class="img-thumbnail img-responsive img-comentario" src="assets/images/ecdb78f4f53c82706b41281920219e5a.jpg">
-              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            </div>
-             <div class="contenido">
-              <h3>Trabajo 1</h3>
-              <em>Trabajo</em>
-              <p>1</p>
-              <img class="img-thumbnail img-responsive img-comentario" src="assets/images/ecdb78f4f53c82706b41281920219e5a.jpg">
-              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            </div>
-
           </div><!--row-m-->
-         </div><!--trab-->
+        </div><!--col-10-->
+      </div><!--row-->
+    </div><!--publi-->
+  </div><!--contenedor-->
 
-         <div id="tut" class="hidden">
-          <div class="row-m">
-            <!--aqui van los trabajos nuevos-->
-             <div class="contenido">
-              <h3>Tutorial</h3>
-              <em>Tutorial</em>
-              <p>1</p>
-              <img class="img-thumbnail img-responsive img-comentario" src="assets/images/ecdb78f4f53c82706b41281920219e5a.jpg">
-              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            </div>
-
-             <div class="contenido">
-              <h3>Tutorial</h3>
-              <em>Tutorial</em>
-              <p>1</p>
-              <img class="img-thumbnail img-responsive img-comentario" src="assets/images/ecdb78f4f53c82706b41281920219e5a.jpg">
-              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            </div>
-             <div class="contenido">
-              <h3>Tutorial</h3>
-              <em>Tutorial</em>
-              <p>1</p>
-              <img class="img-thumbnail img-responsive img-comentario" src="assets/images/ecdb78f4f53c82706b41281920219e5a.jpg">
-              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            </div>
-
-          </div><!--row-m-->
-         </div><!--trab-->
-
-
-
-
-
-
-      </div><!--col-->
-    </div><!--row-->
-
-</div><!--publi-->
-
-
-
-
-
-<!-- Scripts -->
-<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <!-- Scripts -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="assets/js/app.js"></script>

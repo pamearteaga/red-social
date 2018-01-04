@@ -1,11 +1,11 @@
 body {
-	background-image: url(../images/pattern.png);
-	background-repeat: repeat;
+  background-image: url(../images/pattern.png);
+  background-repeat: repeat;
 }
 
 /* estilos cuadro blanco de log in */
 .whiteBox {
-	background-color: #fff;
+  background-color: #fff;
   border-radius: 8px;
   min-height: 533px;
   margin-top: -266px;
@@ -16,24 +16,27 @@ body {
   text-align: center;
   transform: translateX(-50%);
 }
-/* media query de cuadro blanco version md y lg*/
+/* media query de cuadro blanco version md y lg */
 @media (min-width: 768px) {
-	.whiteBox {
-		width: 50%;
-	}
+  .whiteBox {
+    width: 50%;
+  }
 }
 /* logo jandi log in */
 .logoInit {
-	width: 7em;
+  width: 7em;
 }
 .titulo {
-	font-weight: bold;
-	font-size: 28px;
-	color: #555;
+  font-weight: bold;
+  font-size: 28px;
+  color: #555;
 }
 /* caracteristicas generales */
-#init, #newUser, #socialMedia, #sesionClose {
-	text-align: center;
+#init,
+#newUser,
+#socialMedia,
+#sesionClose {
+  text-align: center;
 }
 #new {
   font-weight: bold;
@@ -43,24 +46,35 @@ body {
 }
 /* estilos de input */
 .input {
-	border: 2px solid #7105c6;
-	width: 60%;
-	height: 2.5em;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 20px;
-	margin-bottom: 1.5em;
+  border: 2px solid #7105c6;
+  width: 60%;
+  height: 2.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  margin-bottom: 1.5em;
 }
-#txtEmail, #txtPassword, #txtEmailSignUp, #txtPasswordSignUp {
-	border: none;
-	width: 85%;
-	line-height: 2;
+#txtEmail,
+#txtPassword,
+#txtEmailSignUp,
+#txtPasswordSignUp {
+  border: none;
+  width: 85%;
+  line-height: 2;
 }
-#txtEmail:focus, #txtPassword:focus, #txtEmailSignUp:focus, #txtPassword:focus {
-	outline: 0;
+#txtEmail:focus,
+#txtPassword:focus,
+#txtEmailSignUp:focus,
+#txtPassword:focus {
+  outline: 0;
 }
 /* estilos botones en común */
-#btnLogIn, #btnLogOut, #btnSignUp, #btnFacebook, #btnGoogle, #btnSignUp1 {
+#btnLogIn,
+#btnLogOut,
+#btnSignUp,
+#btnFacebook,
+#btnGoogle,
+#btnSignUp1 {
   background-color: #7105c6;
   color: #fff;
   font-weight: bold;
