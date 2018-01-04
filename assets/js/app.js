@@ -12,20 +12,7 @@ window.onload = function (){
   };
   firebase.initializeApp(config);
 
-function registrar(){
-  var emailSignUp = document.getElementById('txtEmailSignUp').value;
-  var passwordSignUp = document.getElementById('txtPasswordSignUp').value;
 
-  firebase.auth().createUserWithEmailAndPassword(emailSignUp, passwordSignUp).catch(function(error) {//si no resulta la creacion de usuario, se captura el error que produce
-  // Handle Errors here.
-  var errorCode = error.code;
-  var errorMessage = error.message;
-  
-  console.log(errorCode);
-  console.log(errorMessage);
-  });
-
-};
 
 function observador(){
   //observa los cambios de estado de usuario
@@ -85,4 +72,18 @@ function ingreso() {
   console.log(errorMessage);
   
   });
+};
+function registrar(){
+  var emailSignUp = document.getElementById('txtEmailSignUp').value;
+  var passwordSignUp = document.getElementById('txtPasswordSignUp').value;
+
+  firebase.auth().createUserWithEmailAndPassword(emailSignUp, passwordSignUp).catch(function(error) {//si no resulta la creacion de usuario, se captura el error que produce
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  
+  console.log(errorCode);
+  console.log(errorMessage);
+  });
+
 };
