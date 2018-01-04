@@ -85,5 +85,4 @@ function registrar(){
   console.log(errorCode);
   console.log(errorMessage);
   });
-
 };

@@ -6,15 +6,15 @@ body {
 /* estilos cuadro blanco de log in */
 .whiteBox {
 	background-color: #fff;
-    border-radius: 8px;
-    min-height: 533px;
-    margin-top: -266px;
-    width: 90%;
-    left: 50%;
-    top: 50%;
-    position: absolute;
-    text-align: center;
-    transform: translateX(-50%);
+  border-radius: 8px;
+  min-height: 533px;
+  margin-top: -266px;
+  width: 90%;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
 }
 /* media query de cuadro blanco version md y lg*/
 @media (min-width: 768px) {
