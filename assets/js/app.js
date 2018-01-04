@@ -1,3 +1,6 @@
+(function (){
+
+
 // Initialize Firebase
   var config = {
     apiKey: "AIzaSyCjfxMyEz04kBFLW7__40QIxdaLUyJGE5M",
@@ -8,6 +11,7 @@
     messagingSenderId: "1041010720298"
   };
   firebase.initializeApp(config);
+
 
 function ingreso() {
   var email = document.getElementById('txtEmail').value;
@@ -75,7 +79,7 @@ function cerrar(){
     console.log(error);
   })
 };
-
+});
 /*(function(){
 
 // Initialize Firebase
