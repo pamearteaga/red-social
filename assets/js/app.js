@@ -19,6 +19,7 @@ function observador(){
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       console.log('existe usario activo');
+      window.location.href= 'perfil.html';
       aparece(user);
       // User is signed in.
       var displayName = user.displayName;
@@ -91,10 +92,7 @@ function registrar() {
   console.log(errorMessage);
   });
 };
-//redireccionar
-$('btnLogIn').click(function(){
-  window.location.href= 'perfil.html';
-})
+
 function verificar() {
   var user = firebase.auth().currentUser;
   user.sendEmailVerification()
