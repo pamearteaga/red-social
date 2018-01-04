@@ -63,35 +63,143 @@ Mi perfil</a></li>
   </div><!-- /.container-->
 </nav>
 
-<div class="container top">
+<div class="container top bottom">
   <div class="perfil col-lg-2 col-xs-12">
     <img class="img-circle responsive-img" src="assets/images/pame.jpg">
     <h3>Pame Arteaga</h3>
     <ul>
-      <li class="col-lg-12 col-xs-4"><a href="#" style="color: purple">Publicaciones</a></li>
-      <li class="col-lg-12 col-xs-4"><a href="#">Trabajos</a></li>
-      <li class="col-lg-12 col-xs-4"><a href="#">Tutoriales</a></li>
+      <li class="col-lg-12 col-xs-4"><a id="publicaciones" href="#">Publicaciones</a></li>
+      <li class="col-lg-12 col-xs-4"><a id="trabajos" href="#">Trabajos</a></li>
+      <li class="col-lg-12 col-xs-4"><a id="tutoriales" href="#">Tutoriales</a></li>
     </ul>
   </div><!-- perfil-->
 
-  <div id="publicaciones" class="container">
+  <div id="publi" class="container">
       <div class="row">
         <div class="col-lg-10 col-xs-12">
+
           <div class="input">
-            <textarea placeholder="Nueva publicación" id="comentario"></textarea>
-            <input type="file" id="fileElem" multiple accept="image/*">
+            <input type="text" placeholder="Título" id="titulo" class="input-comment">
+            <textarea placeholder="comentario" id="comentario" class="input-comment"></textarea>
+            <select id="categoria" class="select">
+              <option value="">Seleccionar categoría</option>
+              <option value="Trabajo">Trabajo</option>
+              <option value="Tutorial">Tutorial</option>
+            </select>
+            <input type="file" id="foto-video" multiple accept="image/*">
             <button id="publicar" class="nulo">Publicar</button>
+
           </div><!--input-->
-          <div id="comentario-nuevo">
-          <!--aqui van los comentarios nuevos-->
-        </div>
-      </div>
-    </div><!--row 1-->
 
+          <div id="comentario-nuevo" class="row-m">
+            <!--aqui van los comentarios nuevos-->
+
+            <div class="contenido">
+              <h3>Hojitas</h3>
+              <em>Categoría: Trabajo</em>
+              <p>1</p>
+              <img class="img-thumbnail img-responsive img-comentario" src="assets/images/ecdb78f4f53c82706b41281920219e5a.jpg">
+              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            </div>
+
+            <div class="contenido">
+              <p>2</p>
+              <img class="img-thumbnail img-responsive img-comentario" src="assets/images/d952d839da35ab196d9cb9bce940e1c4.jpg">
+            </div>
+
+            <div class="contenido">
+              <p>5</p>
+              <img class="img-thumbnail img-responsive img-comentario" src="assets/images/ea25c10b39cd7e1cb82fa4920a057157.jpg">
+            </div>
+
+            <div class="contenido">
+              <p>3</p>
+              <img class="img-thumbnail img-responsive img-comentario" src="assets/images/db8b540eb814446cebdea6ee9bb4424c.jpg">
+            </div>
+
+            <div class="contenido">
+              <p>4</p>
+              <img class="img-thumbnail img-responsive img-comentario" src="assets/images/darkseafoamfringe_1024x1024.jpg">
+            </div>
+
+        </div><!--comentarios nuevos-->
+
+        <div id="trab" class="hidden">
+          <div class="row-m">
+            <!--aqui van los trabajos nuevos-->
+             <div class="contenido">
+              <h3>Trabajo 1</h3>
+              <em>Trabajo</em>
+              <p>1</p>
+              <img class="img-thumbnail img-responsive img-comentario" src="assets/images/ecdb78f4f53c82706b41281920219e5a.jpg">
+              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            </div>
+
+             <div class="contenido">
+              <h3>Trabajo 1</h3>
+              <em>Trabajo</em>
+              <p>1</p>
+              <img class="img-thumbnail img-responsive img-comentario" src="assets/images/ecdb78f4f53c82706b41281920219e5a.jpg">
+              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            </div>
+             <div class="contenido">
+              <h3>Trabajo 1</h3>
+              <em>Trabajo</em>
+              <p>1</p>
+              <img class="img-thumbnail img-responsive img-comentario" src="assets/images/ecdb78f4f53c82706b41281920219e5a.jpg">
+              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            </div>
+
+          </div><!--row-m-->
+         </div><!--trab-->
+
+         <div id="tut" class="hidden">
+          <div class="row-m">
+            <!--aqui van los trabajos nuevos-->
+             <div class="contenido">
+              <h3>Tutorial</h3>
+              <em>Tutorial</em>
+              <p>1</p>
+              <img class="img-thumbnail img-responsive img-comentario" src="assets/images/ecdb78f4f53c82706b41281920219e5a.jpg">
+              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            </div>
+
+             <div class="contenido">
+              <h3>Tutorial</h3>
+              <em>Tutorial</em>
+              <p>1</p>
+              <img class="img-thumbnail img-responsive img-comentario" src="assets/images/ecdb78f4f53c82706b41281920219e5a.jpg">
+              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            </div>
+             <div class="contenido">
+              <h3>Tutorial</h3>
+              <em>Tutorial</em>
+              <p>1</p>
+              <img class="img-thumbnail img-responsive img-comentario" src="assets/images/ecdb78f4f53c82706b41281920219e5a.jpg">
+              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            </div>
+            
+          </div><!--row-m-->
+         </div><!--trab-->
+
+
+
+
+
+
+      </div><!--col-->
+    </div><!--row-->
       
-</div><!--publicaciones-->
+</div><!--publi-->
 
-</div><!-- /.container-->
+
 
 
 
