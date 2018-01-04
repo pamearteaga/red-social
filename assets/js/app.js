@@ -57,6 +57,7 @@ function ingreso() {
   var email = document.getElementById('txtEmail').value;
   var password = document.getElementById('txtPassword').value;
   firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {//si no funciona el ingreso de usuario, arroja error existente
+
   // Handle Errors here.
   var errorCode = error.code;
   var errorMessage = error.message;
@@ -90,6 +91,10 @@ function registrar() {
   console.log(errorMessage);
   });
 };
+//redireccionar
+$('btnLogIn').click(function(){
+  window.location.href= 'perfil.html';
+})
 function verificar() {
   var user = firebase.auth().currentUser;
   user.sendEmailVerification()
