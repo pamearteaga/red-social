@@ -216,10 +216,17 @@ span {
   border: 2px solid #7105c6;
 }
 
+.friend h3 {
+  display: inline-block;
+  margin: 0 20px;
+}
+
 .friend span {
   margin: 10px 10px;
   font-size: 24px;
+  cursor: pointer;
 }
+
 
 /********QUERIES********/
 
