@@ -73,16 +73,31 @@ function ingreso() {
   
   });
 };
-function registrar(){
+function registrar() {
   var emailSignUp = document.getElementById('txtEmailSignUp').value;
   var passwordSignUp = document.getElementById('txtPasswordSignUp').value;
 
-  firebase.auth().createUserWithEmailAndPassword(emailSignUp, passwordSignUp).catch(function(error) {//si no resulta la creacion de usuario, se captura el error que produce
+  firebase.auth().createUserWithEmailAndPassword(emailSignUp, passwordSignUp)
+  .then(function(){
+    verificar();
+  })
+  .catch(function(error) {//si no resulta la creacion de usuario, se captura el error que produce
   // Handle Errors here.
   var errorCode = error.code;
   var errorMessage = error.message;
-  
   console.log(errorCode);
   console.log(errorMessage);
+  });
+};
+
+function verificar() {
+  var user = firebase.auth().currentUser;
+
+  user.sendEmailVerification().then(function() {
+    // Email sent.
+    console.log('enviando correo');
+  }).catch(function(error) {
+  // An error happened.
+  console.log(error);
   });
 };
