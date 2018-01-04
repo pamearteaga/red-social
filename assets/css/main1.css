@@ -204,6 +204,7 @@ span {
 /*******publicaciones nuevas********/
 
 .friend {
+  width: 80%;
   margin-top: 20px;
   background-color: white;
   padding: 20px;
