@@ -33,7 +33,7 @@ function mostrarImagenesDeFirebase() {
     var datos = snapshot.val();
     var result = "";
     for(var key in datos){
-      result += '<img  width="200" class="img-thumbnail" src="' + datos[key].url + '"/>';
+      result += '<div id="newComent"><img  width="200" class="img-thumbnail" src="' + datos[key].url + '"/></div>';
     }
     document.getElementById('comentario-nuevo').innerHTML = result;
   })

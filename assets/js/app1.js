@@ -21,7 +21,7 @@ $(document).ready(function() {
     }
     $("#publicar").removeAttr("class")
     $("#publicar").attr("class", "activo")
-    $("#comentario-nuevo").prepend('<div class="contenido" id="newComent">' + '<h3>' + title + '</h3>' +
+    $("#newComent").prepend('<div class="contenido" id="newComent">' + '<h3>' + title + '</h3>' +
       '<em>' + category + '</em>' +
       '<p>' + comment + '</p>' + '<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></div>');
   }); // funcion publicar
