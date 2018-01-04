@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Red social</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/main-log.css">
+</head>
+
+<body>
+  <section class="container whiteBox">
+    <!--iniciar sesión-->
+    <div id="init">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <img src="assets/images/jandi-morado-jan.png" class="logoInit" alt="jandi">
+        </div>
+      </div>
+      <!--titulo-->
+      <div class="row">
+        <div class="titulo col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <p>Bienvenido a jandi</p>
+        </div>
+      </div>
+      <!--input email-->
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="input">
+            <input type="email" id="txtEmail" placeholder="E-mail">
+          </div>
+        </div>
+      </div>
+      <!--input password-->
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="input">
+            <input type="password" id="txtPassword" placeholder="Password">
+          </div>
+        </div>
+      </div>
+      <!--boton para conectarse-->
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <!--<button id="btnLogIn" class="btn btn-action">Continuar</button>-->
+          <a href="index.html" role="button" class="btn btn-action" id="btnLogIn">Continuar</a>
+        </div>
+      </div>
+      <!--boton oculto para desconectarse-->
+      <button id="btnLogOut" class="btn btn-action hide">Log Out</button>
+    </div>
+
+    <!--seccion nuevo usuario-->
+    <div id="newUser">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <p id="new">¿Eres nuevo?</p>
+          <button id="btnSignUp" class="btn btn-secondary">Registrate</button>
+        </div>
+      </div>
+    </div>
+
+    <!--division de secciones-->
+    <hr>
+
+    <!--social media log in-->
+    <div id="socialMedia">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <button class="btn" id="btnFacebook"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i> Iniciar con Facebook</button>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <button class="btn" id="btnGoogle"><i class="fa fa-google fa-lg" aria-hidden="true"></i> Iniciar con Google</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      <!--firebase codigo-->
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <!--query y bootstrap-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-messaging.js"></script>
+
+<!--acceso gogle-->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://use.fontawesome.com/af26e6fe45.js"></script>
+  <script type="text/javascript" src="assets/js/app-log.js"></script>
+
+</body>
+</html>
