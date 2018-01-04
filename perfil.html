@@ -6,6 +6,7 @@
   <title>Jandi</title>
 
   <link rel="stylesheet" href="assets/css/main1.css">
+  <link rel="stylesheet" href="assets/css/mainIcon.css">
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -19,7 +20,7 @@
 <body>
   <nav class="navbar">
   <div class="container">
-  
+
     <div class="navbar-header">
       <!--menu mobile -->
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -47,7 +48,7 @@ Amigos</a></li>
         <li><a href="#" style="color:#3fea98"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
 Mi perfil</a></li>
       </ul> <!-- secciones-->
-      
+
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Configuración</a>
@@ -86,7 +87,16 @@ Mi perfil</a></li>
               <option value="Trabajo">Trabajo</option>
               <option value="Tutorial">Tutorial</option>
             </select>
-            <input type="file" id="foto-video" multiple accept="image/*">
+
+
+            <form id="form-imagenes">
+              <label class="btn btn-file iconImg">
+                <input type="file" name="fichero" value="" id="fichero" class="hidden">
+                <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+              </label>
+            </form>
+
+
             <button id="publicar" class="nulo">Publicar</button>
 
           </div><!--input-->
@@ -185,7 +195,7 @@ Mi perfil</a></li>
               <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
               <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             </div>
-            
+
           </div><!--row-m-->
          </div><!--trab-->
 
@@ -196,7 +206,7 @@ Mi perfil</a></li>
 
       </div><!--col-->
     </div><!--row-->
-      
+
 </div><!--publi-->
 
 
@@ -204,8 +214,10 @@ Mi perfil</a></li>
 
 
 <!-- Scripts -->
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="assets/js/app1.js"></script>
+  <script type="text/javascript" src="assets/js/app2.js"></script>
 </body>
 </html>

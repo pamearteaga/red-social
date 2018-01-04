@@ -23,8 +23,8 @@ $(document).ready(function(){
       $("#publicar").attr("class","activo")
       $("#comentario-nuevo").prepend('<div class="contenido">' + '<h3>' + title + '</h3>'
         + '<em>' + category + '</em>'
-        + '<p>' + comment + '</p>' + 
-        '<img class="img-thumbnail img-responsive img-comentario" src="https://t1.uc.ltmcdn.com/images/6/1/6/img_por_que_mi_gato_maulla_mucho_26616_600.jpg">' 
+        + '<p>' + comment + '</p>' +
+        '<img class="img-thumbnail img-responsive img-comentario" src="https://t1.uc.ltmcdn.com/images/6/1/6/img_por_que_mi_gato_maulla_mucho_26616_600.jpg">'
         + '<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></div>');
     });// funcion publicar
 
@@ -62,4 +62,3 @@ $(document).ready(function(){
 
 
 }); //document ready
-
