@@ -10,6 +10,41 @@
 
 <body>
   <!--modal de registro-->
+  <div id="modalRegistro" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Registrate en Jandi</h4>
+        </div>
+        <div class="modal-body">
+          <div id="newUser">
+            <!--input email-->
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="input">
+                  <input type="email" id="txtEmailSignUp" placeholder="E-mail">
+                </div>
+              </div>
+            </div>
+            <!--input password-->
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="input">
+                  <input type="password" id="txtPasswordSignUp" placeholder="Password">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button id="btnSignUp" class="btn btn-secondary" onclick="registrar()">Registrate</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <section class="container whiteBox">
@@ -60,29 +95,11 @@
     </div>
 
     <!--seccion nuevo usuario-->
-    <!--registro-->
     <div id="newUser">
-      <!--input email-->
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <div class="input">
-            <input type="email" id="txtEmailSignUp" placeholder="E-mail">
-          </div>
-        </div>
-      </div>
-      <!--input password-->
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <div class="input">
-            <input type="password" id="txtPasswordSignUp" placeholder="Password">
-          </div>
-        </div>
-      </div>
-
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <p id="new">¿Eres nuevo?</p>
-          <button id="btnSignUp" class="btn btn-secondary" onclick="registrar()" data-toggle="modal" data-target="#modalSignUp">Registrate</button>
+          <button id="btnSignUp" class="btn btn-secondary" onclick="registrar()" data-toggle="modal" data-target="#modalRegistro">Registrate</button>
         </div>
       </div>
     </div>
