@@ -28,6 +28,7 @@ $(document).ready(function(){
         + '<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></div>');
     });// funcion publicar
 
+
     $("#comentario").keydown(function(){
       $("#publicar").removeAttr("class")
       $("#publicar").attr("class","activo")
