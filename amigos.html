@@ -37,14 +37,10 @@
               <input type="text" class="form-control" placeholder="Buscar...">
             </div>
           </form>
-          <li><a href="perfil.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-  Inicio</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-  Favoritos</a></li>
-          <li><a href="#" style="color:#3fea98"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-  Amigos</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
-  Mi perfil</a></li>
+          <li><a href="newsfeed.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Inicio</a></li>
+          <li><a href="favoritos.html"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>Favoritos</a></li>
+          <li><a href="amigos.html" style="color:#3fea98"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Amigos</a></li>
+          <li><a href="perfil.html"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Mi perfil</a></li>
         </ul> <!-- secciones-->
         
         <ul class="nav navbar-nav navbar-right">
@@ -65,12 +61,24 @@
   <div class="container top bottom">
     <!-- aca se agregan los amigos-->
 
-    <div class="friend col-lg-6 col-xs-12">
-      <img src="assets/images/jose.jpg" class="img-circle" width="60" height="60">
-      <h3>Josefina León</h3>
-      <span class="glyphicon glyphicon-envelope" aria-hidden="true" style="color: teal" data-toggle="modal" data-target="#modal-mensaje" data-whatever="@getbootstrap"></span>
-      <span class="glyphicon glyphicon-trash" aria-hidden="true" style="color: red"></span>
+    <div class="col-lg-6 col-xs-12">
+      <div class="friend">
+        <img src="assets/images/jose.jpg" class="img-circle" width="60" height="60">
+        <a href="perfil-jose.html"><h3>Josefina León</h3></a>
+        <span class="glyphicon glyphicon-envelope" aria-hidden="true" style="color: teal" data-toggle="modal" data-target="#modal-mensaje" data-whatever="@getbootstrap"></span>
+        <span id="borrar" class="glyphicon glyphicon-trash" aria-hidden="true" style="color: red"></span>
+      </div>
     </div>
+
+    <div class="col-lg-6 col-xs-12">
+      <div class="friend">
+        <img src="assets/images/nadia.jpg" class="img-circle" width="60" height="60">
+        <a href="perfil-nadia.html"><h3>Nadia Morales</h3></a>
+        <span class="glyphicon glyphicon-envelope" aria-hidden="true" style="color: teal" data-toggle="modal" data-target="#modal-mensaje" data-whatever="@getbootstrap"></span>
+        <span id="borrar2" class="glyphicon glyphicon-trash" aria-hidden="true" style="color: red"></span>
+      </div>
+    </div>
+
   </div><!--container-->
 
 <!--modal mensaje-->
@@ -79,19 +87,17 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">Mensaje para Josefina</h4>
+        <h4 class="modal-title" id="exampleModalLabel">Mensaje</h4>
       </div>
       <div class="modal-body">
         <form>
           <div class="form-group">
-            <label for="message-text" class="control-label">Mensaje</label>
-            <textarea class="form-control" id="message-text"></textarea>
+            <textarea class="form-control" id="message-text" placeholder="Escribe aquí..."></textarea>
           </div>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Enviar</button>
+        <button type="button" class="btn activo" data-dismiss="modal">Enviar</button>
       </div>
     </div>
   </div>

@@ -52,6 +52,12 @@ $(document).ready(function() {
   }); // boton categoria tutoriales
 
 
+  $("#borrar, #borrar2").click(function() {
+     $(this).parent().remove();
+  }); // boton eliminas amigo
+
+
+
 
   //evento que al hacer click le agrega color rojo al corazón
   /*heart.addEventListener('click', function(){
