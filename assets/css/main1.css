@@ -204,13 +204,14 @@ span {
 /*******publicaciones nuevas********/
 
 .friend {
-  width: 80%;
-  margin-top: 20px;
+  width: 90%;
+  margin: 20px;
   background-color: white;
   padding: 20px;
   color: grey;
   border-radius: 10px;
   display: inline-block;
+  text-align: center;
 }
 
 .friend img {
@@ -219,7 +220,7 @@ span {
 
 .friend h3 {
   display: inline-block;
-  margin: 0 20px;
+  margin:10px 30px;
 }
 
 .friend span {
@@ -231,8 +232,9 @@ span {
 
 /********QUERIES********/
 
-@media (min-width: 768px){
-  .navbar{
-    border-radius: 0px;
+@media (max-width: 768px){
+  .perfil img {
+    width: 30%;
+    margin: 0 auto;
   }
 }
