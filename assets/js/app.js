@@ -76,6 +76,7 @@ function cerrar(){
     console.log(error)
   })
 };
+
 function registrar() {
   var emailSignUp = document.getElementById('txtEmailSignUp').value;
   var passwordSignUp = document.getElementById('txtPasswordSignUp').value;
