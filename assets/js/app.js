@@ -15,14 +15,18 @@ window.onload = function (){
 
 
 function observador(){
-  //observa los cambios de estado de usuario
+  //observa los cambios de estado de usuario en la página
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       console.log('existe usario activo');
+      aparece(user);
       // User is signed in.
       var displayName = user.displayName;
       var email = user.email;
-      console.log(email);
+      console.log('****************');
+      console.log(user.emailVerified);
+      console.log('****************');
+
       var emailVerified = user.emailVerified;
       var photoURL = user.photoURL;
       var isAnonymous = user.isAnonymous;
@@ -37,30 +41,18 @@ function observador(){
   });
 } observador();
 
-function aparece(){
+function aparece(user){
+  var user = user;
   var logOut = document.getElementById('sesionClose');
-  console.log('hola');
-  logOut.innerHTML = 'solo lo ve usuairo activo';
-};
-
-//añadir evento a boton oculto
-var btnLogOut = document.getElementById('btnLogOut');
-btnLogOut.addEventListener('click', e => {
-  firebase.auth().signOut();
-});
-
-//añadir evento en tiempo real para comprobar cambios en el estado de usuario
-firebase.auth().onAuthStateChanged(firebaseUser => {
-  if(firebaseUser) {
-    console.log(firebaseUser);
-    btnLogOut.classList.remove('hide');
-  } else {
-    console.log('no loggueado');
-    btnLogOut.classList.add('hide');
+  if(user.emailVerified){
+    logOut.innerHTML = `
+    <button class="btn" id="btnLogOut" onclick="cerrar()">Cerrar Sesión</button>
+    `;
   }
-});
 };
 
+
+}
 function ingreso() {
   var email = document.getElementById('txtEmail').value;
   var password = document.getElementById('txtPassword').value;
@@ -72,6 +64,15 @@ function ingreso() {
   console.log(errorMessage);
   
   });
+};
+function cerrar(){
+  firebase.auth().signOut()
+  .then(function(){
+    console.log('saliendo...')
+  })
+  .catch(function(error){
+    console.log(error)
+  })
 };
 function registrar() {
   var emailSignUp = document.getElementById('txtEmailSignUp').value;
@@ -89,13 +90,12 @@ function registrar() {
   console.log(errorMessage);
   });
 };
-
 function verificar() {
   var user = firebase.auth().currentUser;
-
-  user.sendEmailVerification().then(function() {
+  user.sendEmailVerification()
+  .then(function() {
     // Email sent.
-    console.log('enviando correo');
+    console.log('enviando correo...');
   }).catch(function(error) {
   // An error happened.
   console.log(error);
