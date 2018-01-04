@@ -203,6 +203,27 @@ span{
  display: block;
 }
 
+/*******publicaciones nuevas********/
+
+.friend{
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+  color: grey;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.friend img{
+  border: 2px solid #7105c6;
+}
+
+.friend span{
+  margin: 10px 10px;
+  font-size: 24px;
+}
+
+
 
 /********QUERIES********/
 
