@@ -230,6 +230,18 @@ span {
   cursor: pointer;
 }
 
+/******* genericos ********/
+
+.titulos {
+  margin-bottom: 20px !important;
+}
+
+.titulos h4, .titulos p{
+  display: inline-block;
+  margin-left: 5px;
+}
+
+
 
 /********QUERIES********/
 
