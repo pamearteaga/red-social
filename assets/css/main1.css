@@ -230,7 +230,7 @@ span {
 
 /* area de comentario e imagenes */
 .areaPost {
-  background: #008055;
+  background-color: rgba(255,255,255,0.6);
   margin-left: 202px;
   margin-top: -148px;
   border-radius: 10px;
@@ -260,8 +260,13 @@ img {
 
 /********QUERIES********/
 
-@media (max-width: 768px){
+@media (max-width: 850px){
   .perfil img {
    width: 30%;
+  }
+
+  .areaPost {
+    margin-left: 0;
+    margin-top: 20px;
   }
 }
