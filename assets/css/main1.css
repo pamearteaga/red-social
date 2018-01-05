@@ -255,10 +255,10 @@ img {
   margin-left: 5px;
 }
 
-.purple {
+.hand:hover {
   color: #7105c6;
 }
-.green {
+.star:hover {
   color: #3fea98;
 }
 
