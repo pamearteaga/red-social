@@ -255,7 +255,12 @@ img {
   margin-left: 5px;
 }
 
-
+.purple {
+  color: #7105c6;
+}
+.green {
+  color: #3fea98;
+}
 
 
 /********QUERIES********/

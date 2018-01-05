@@ -42,6 +42,18 @@ function observador(){
   });
 } observador();
 
+
+$('#cerrarPerfil').click(function(){
+  console.log('cerraste perfil');
+  firebase.auth().signOut().then(function(){
+    location.reload();
+  }).catch(function(error){
+
+  })
+})
+
+}
+
 function aparece(user){
   var user = user;
   var logOut = document.getElementById('sesionClose');
@@ -52,8 +64,6 @@ function aparece(user){
   }
 };
 
-
-}
 function ingreso() {
   var email = document.getElementById('txtEmail').value;
   var password = document.getElementById('txtPassword').value;
@@ -70,6 +80,7 @@ function ingreso() {
 function cerrar(){
   firebase.auth().signOut()
   .then(function(){
+    location.reload();
     console.log('saliendo...')
   })
   .catch(function(error){
@@ -105,3 +116,4 @@ function verificar() {
   console.log(error);
   });
 };
+//favoritos

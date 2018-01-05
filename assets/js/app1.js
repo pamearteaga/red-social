@@ -58,7 +58,6 @@ $(document).ready(function() {
 
 
 
-
   //evento que al hacer click le agrega color rojo al corazón
   /*heart.addEventListener('click', function(){
       heart.classList.toggle('red');
