@@ -33,9 +33,9 @@ function mostrarImagenesDeFirebase() {
     var datos = snapshot.val();
     var result = "";
     for(var key in datos){
-      result += '<div id="newComent"><img  width="200" class="img-thumbnail" src="' + datos[key].url + '"/></div>';
+      result += '<img  width="200" class="img-thumbnail" src="' + datos[key].url + '"/>';
     }
-    document.getElementById('comentario-nuevo').innerHTML = result;
+    document.getElementById('fotos').innerHTML = result;
   })
 }
 

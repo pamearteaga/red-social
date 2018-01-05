@@ -228,11 +228,12 @@ span {
   cursor: pointer;
 }
 
+/* area de comentario e imagenes */
 .areaPost {
   background: #008055;
-margin-left: 202px;
-margin-top: -148px;
-border-radius: 10px;
+  margin-left: 202px;
+  margin-top: -148px;
+  border-radius: 10px;
 }
 
 img {
@@ -244,13 +245,23 @@ img {
 }
 
 
-/********QUERIES********/
 
-@media (min-width: 768px){
-  .navbar{
-    border-radius: 0px;
-  }
+.titulos {
+  margin-bottom: 20px !important;
+}
+
+.titulos h4, .titulos p{
+  display: inline-block;
+  margin-left: 5px;
 }
 
 
 
+
+/********QUERIES********/
+
+@media (max-width: 768px){
+  .perfil img {
+   width: 30%;
+  }
+}
